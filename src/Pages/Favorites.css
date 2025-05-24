@@ -1,0 +1,142 @@
+/* Favorites css */
+.favorites-page {
+  padding: 20px;
+  background-color: #222;
+  min-height: 100vh;
+  color: #f7b733;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.favorites-page h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* Grid for cards */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Single card*/
+.favorite-card {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  width: 220px;
+  height: 350px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none; 
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+  overflow: hidden; 
+}
+
+.favorite-card-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0; 
+  margin: 0; /
+}
+
+
+.favorite-card-title,
+.favorite-card-buttons {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.favorite-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(247, 183, 51, 0.8);
+}
+
+
+.favorite-card-title {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.favorite-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+
+
+.favorite-card-buttons .back-btn,
+.favorite-card-buttons .delete-btn {
+  background-color: #55555590;
+  color: white;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.favorite-card-buttons .delete-btn {
+  background-color: #f7b733;
+}
+
+.favorite-card-buttons .back-btn:hover {
+  background-color: #00000090;
+}
+
+.favorite-card-buttons .delete-btn:hover {
+  background-color: #f7b633bf;
+}
+
+/* No favorites message */
+.favorites-page p {
+  font-size: 1.2rem;
+  margin-top: 40px;
+  color: #ccc;
+}
+
+.page-header {
+  padding: 10px 20px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px #f7b733;
+}
+
+.back-to-home {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.back-to-home:hover {
+  color: #298eea;
+}
