@@ -11,7 +11,7 @@ Powered by the TMDb API and built with React + TypeScript.
 
 ---
 
-
+https://github.com/n-kojevic/Cine-Time/blob/main/assets/Lenovo%20ThinkPad%20L14-1750504661776.jpeg?raw=true
 
 
 ## 📌 Project Overview
