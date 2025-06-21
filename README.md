@@ -13,8 +13,9 @@ Powered by the TMDb API and built with React + TypeScript.
 
 ## 📸 Screenshots
 
-![Desktop view](./assets/screenshot-desktop.png)  
-![Mobile view](./assets/screenshot-mobile.png)
+![Desktop view](https://raw.githubusercontent.com/n-kojevic/Cine-Time/main/assets/screenshot-desktop.png)  
+![Mobile view](https://raw.githubusercontent.com/n-kojevic/Cine-Time/main/assets/screenshot-mobile.png)
+
 
 
 ## 📌 Project Overview
