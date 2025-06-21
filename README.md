@@ -1,56 +1,100 @@
-Project Documentation: CineTime
+# 🎬 CineTime – Movie Explorer App
 
-1. Project Overview:
+CineTime is a web application that allows users to explore and favorite movies.  
+Users can browse popular titles, search by name, and manage their personal list of favorites.  
+Powered by the TMDb API and built with React + TypeScript.
 
-CineTime is a web application that allows users to browse and add favorite movies. Users can view popular movies, search by title, and add movies to their favorites list.
+---
 
-2. Technologies Used:
+## 🌐 Live Demo  
+👉 [Visit CineTime Live Site](https://cinetimenk.netlify.app/)
 
-React (with TypeScript)
-React Router (for navigation)
-Context API (for managing favorites)
-CSS (for styling pages and cards)
-TMDb API (source of movie data)
+---
 
-3. Project Structure:
+## 📌 Project Overview
 
-Components:
-Home: Displays a list of popular movies with search and pagination.
-Favorites: Shows the list of movies the user has marked as favorites.
-MovieDetails (optional/future): Displays detailed info about a movie.
-FavoritesContext: Stores favorite movies and provides functions to add or remove them.
+- Displays popular movies using data from the TMDb API  
+- Includes client-side search functionality  
+- Allows users to add/remove favorites using global state (Context API)  
+- Responsive UI with dark theme and accent colors  
+- Uses React Router for navigation between pages
 
-Routes
-/ - Home page with movies and search functionality
-/favorites - Page showing favorite movies
-/movies/ - Page showing first page of movies
-/popular - Page showing popular movies
+---
 
-4. Features:
+## ⚙️ Technologies Used
 
-Movie Display (Home)
--Fetches movies from the TMDb API.
--Shows movies as cards with poster and title.
--Pagination displays 15 movies per page.
--Search input filters movies by title (client-side filtering).
--Favorites Page
--Displays movies added to favorites.
--Users can remove movies from favorites.
+- ⚛️ React (with **TypeScript**)  
+- 🧭 React Router (routing)  
+- 📦 Context API (global state for favorites)  
+- 🎨 CSS (custom styling, dark theme, grid layout)  
+- 🎬 [TMDb API](https://www.themoviedb.org/documentation/api) (movie data source)
 
-Search:
--Search input filters movies instantly based on the current loaded movies.
--Search works on the visible movie list.
+---
 
-5. Styling:
-   Dark theme with yellow and blue accent colors.
-   Movie cards with posters, titles, and buttons.
-   Buttons include hover effects.
-   Responsive grid layout for cards.
+## 🧩 Project Structure
 
-6. How to Run the Project
-   Clone the repository:
+/src
+/components
+- MovieCard.tsx
+- SearchBar.tsx
+/pages
+- Home.tsx
+- Favorites.tsx
+- MovieDetails.tsx (optional/future)
+/context
+- FavoritesContext.tsx
+/routes
+- App.tsx (React Router config)
 
-Run npm install to install dependencies
-Run npm start to start the development server
-Open http://localhost:3000 in your browser
+  
+---
 
+## 📂 Routes
+
+| Path             | Description                           |
+|------------------|---------------------------------------|
+| `/`              | Home page with movie list & search    |
+| `/favorites`     | Displays favorite movies              |
+| `/movies`        | Alternative view of movies            |
+| `/popular`       | Popular movies (same as homepage)     |
+
+---
+
+## 🎯 Features
+
+### 📽️ Movie Display (Home)
+- Fetches movies from TMDb API  
+- Displays movie cards with poster & title  
+- Pagination: 15 movies per page  
+- Client-side search by title
+
+### ⭐ Favorites
+- Add/remove movies from a persistent favorites list  
+- Global state managed via React Context
+
+### 🔍 Search
+- Filters current visible list of movies in real-time  
+- Lightweight, no additional API calls
+
+### 💅 Styling
+- Dark theme with yellow & blue accents  
+- Responsive grid layout  
+- Hover effects on buttons and cards
+
+---
+
+Clone the repository:
+git clone https://github.com/n-kojevic/Cine-Time.git
+
+Install dependencies:
+npm install
+
+Run the app:
+npm start
+
+Open in browser:
+http://localhost:3000
+
+📬 Contact
+For questions or suggestions:
+📧 LinkedIn – Nikola Kojevic
