@@ -11,7 +11,14 @@ Powered by the TMDb API and built with React + TypeScript.
 
 ---
 
+## 📸 Screenshots:
+
 https://github.com/n-kojevic/Cine-Time/blob/main/assets/Lenovo%20ThinkPad%20L14-1750504661776.jpeg?raw=true
+https://github.com/n-kojevic/Cine-Time/blob/main/assets/MacBook%20Pro-1750504624636.jpeg?raw=true
+https://github.com/n-kojevic/Cine-Time/blob/main/assets/Screenshot%202025-06-21%20125221.png?raw=true
+https://github.com/n-kojevic/Cine-Time/blob/main/assets/Screenshot%202025-06-21%20125331.png?raw=true
+https://github.com/n-kojevic/Cine-Time/blob/main/assets/iPad-1750504610333.jpeg?raw=true
+https://github.com/n-kojevic/Cine-Time/blob/main/assets/iPhone%205-SE-1750504653209.jpeg?raw=true
 
 
 ## 📌 Project Overview
