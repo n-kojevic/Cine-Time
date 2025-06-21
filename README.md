@@ -11,6 +11,12 @@ Powered by the TMDb API and built with React + TypeScript.
 
 ---
 
+## 📸 Screenshots
+
+![Desktop view](./assets/screenshot-desktop.png)  
+![Mobile view](./assets/screenshot-mobile.png)
+
+
 ## 📌 Project Overview
 
 - Displays popular movies using data from the TMDb API  
