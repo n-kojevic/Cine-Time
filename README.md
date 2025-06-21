@@ -11,6 +11,22 @@ Powered by the TMDb API and built with React + TypeScript.
 
 ---
 
+## 📸 Screenshots
+
+### 🖥️ Desktop View  
+![Desktop](https://raw.githubusercontent.com/n-kojevic/Cine-Time/main/assets/cinetime-desktop.png)
+
+### 📱 Mobile View  
+![Mobile](https://raw.githubusercontent.com/n-kojevic/Cine-Time/main/assets/cinetime-mobile.png)
+
+### 🔍 Search Functionality  
+![Search](https://raw.githubusercontent.com/n-kojevic/Cine-Time/main/assets/cinetime-search.png)
+
+### ⭐ Favorites Page  
+![Favorites](https://raw.githubusercontent.com/n-kojevic/Cine-Time/main/assets/cinetime-favorites.png)
+
+### 🎬 Movie Card Example  
+![Movie Card](https://raw.githubusercontent.com/n-kojevic/Cine-Time/main/assets/cinetime-moviecard.png)
 
 
 
