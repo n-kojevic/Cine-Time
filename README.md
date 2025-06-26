@@ -66,7 +66,8 @@ Users can view popular titles, search by movie name, and add or remove items fro
 
 1. **Clone the repository**  
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/n-kojevic/Cine-Time.git
+
 2. **Install dependencies**
    npm install
    
