@@ -1,122 +1,71 @@
-# 🎬 CineTime – Movie Explorer App
+Project Documentation: CineTime
 
-CineTime is a web application that allows users to explore and favorite movies.  
-Users can browse popular titles, search by name, and manage their personal list of favorites.  
-Powered by the TMDb API and built with React + TypeScript.
+1. Project Overview:
 
----
+CineTime is a web application that allows users to browse and add favorite movies. Users can view popular movies, search by title, and add movies to their favorites list.
 
-## 🌐 Live Demo  
-👉 [Visit CineTime Live Site](https://cinetimenk.netlify.app/)
+2. Technologies Used:
 
----
+React (with TypeScript)
+React Router (for navigation)
+Context API (for managing favorites)
+CSS (for styling pages and cards)
+TMDb API (source of movie data)
 
-## 📸 Screenshots
+3. Project Structure:
 
-### 💻 Lenovo ThinkPad L14  
-![Lenovo ThinkPad L14](https://github.com/n-kojevic/Cine-Time/blob/main/assets/Lenovo%20ThinkPad%20L14-1750504661776.jpeg?raw=true)
+Components:
+Home: Displays a list of popular movies with search and pagination.
+Favorites: Shows the list of movies the user has marked as favorites.
+MovieDetails (optional/future): Displays detailed info about a movie.
+FavoritesContext: Stores favorite movies and provides functions to add or remove them.
 
-### 💻 MacBook Pro  
-![MacBook Pro](https://github.com/n-kojevic/Cine-Time/blob/main/assets/MacBook%20Pro-1750504624636.jpeg?raw=true)
+Routes
+/ - Home page with movies and search functionality
+/favorites - Page showing favorite movies
+/movies/ - Page showing first page of movies
+/popular - Page showing popular movies
 
-### 📷 Screenshot 1  
-![Screenshot 1](https://github.com/n-kojevic/Cine-Time/blob/main/assets/Screenshot%202025-06-21%20125221.png?raw=true)
+4. Features:
 
-### 📷 Screenshot 2  
-![Screenshot 2](https://github.com/n-kojevic/Cine-Time/blob/main/assets/Screenshot%202025-06-21%20125331.png?raw=true)
+Movie Display (Home)
+-Fetches movies from the TMDb API.
+-Shows movies as cards with poster and title.
+-Pagination displays 15 movies per page.
+-Search input filters movies by title (client-side filtering).
+-Favorites Page
+-Displays movies added to favorites.
+-Users can remove movies from favorites.
 
-### 📱 iPad  
-![iPad](https://github.com/n-kojevic/Cine-Time/blob/main/assets/iPad-1750504610333.jpeg?raw=true)
+Search:
+-Search input filters movies instantly based on the current loaded movies.
+-Search works on the visible movie list.
 
-### 📱 iPhone 5 SE  
-![iPhone 5 SE](https://github.com/n-kojevic/Cine-Time/blob/main/assets/iPhone%205-SE-1750504653209.jpeg?raw=true)
+5. Styling:
+   Dark theme with yellow and blue accent colors.
+   Movie cards with posters, titles, and buttons.
+   Buttons include hover effects.
+   Responsive grid layout for cards.
 
+6. How to Run the Project
+   Clone the repository:
 
+Run npm install to install dependencies
+Run npm start to start the development server
+Open http://localhost:3000 in your browser
 
-## 📌 Project Overview
+ 7. Future Improvements
+Full responsiveness across all screen sizes:
+The current implementation includes a basic responsive grid layout for movie cards, but full optimization for all device types and screen resolutions is still a work in progress. Future updates will focus on enhancing the user experience on mobile phones, tablets, laptops, and large desktop monitors.
 
-- Displays popular movies using data from the TMDb API  
-- Includes client-side search functionality  
-- Allows users to add/remove favorites using global state (Context API)  
-- Responsive UI with dark theme and accent colors  
-- Uses React Router for navigation between pages
+Advanced layout adjustments:
+Introducing more advanced layout techniques (e.g., CSS Grid, more flexible media queries, dynamic typography scaling) to improve adaptability and visual consistency across devices.
 
----
+Accessibility and usability enhancements:
+Improvements planned for better accessibility, including enhanced focus management, scalable text, and optimization for screen readers.
 
-## ⚙️ Technologies Used
+Performance optimizations for mobile devices:
+Optimizing image sizes and resource loading specifically for mobile to ensure faster response times and reduced data usage.
 
-- ⚛️ React (with **TypeScript**)  
-- 🧭 React Router (routing)  
-- 📦 Context API (global state for favorites)  
-- 🎨 CSS (custom styling, dark theme, grid layout)  
-- 🎬 [TMDb API](https://www.themoviedb.org/documentation/api) (movie data source)
-
----
-
-## 🧩 Project Structure
-
-/src
-/components
-- MovieCard.tsx
-- SearchBar.tsx
-/pages
-- Home.tsx
-- Favorites.tsx
-- MovieDetails.tsx (optional/future)
-/context
-- FavoritesContext.tsx
-/routes
-- App.tsx (React Router config)
-
-  
----
-
-## 📂 Routes
-
-| Path             | Description                           |
-|------------------|---------------------------------------|
-| `/`              | Home page with movie list & search    |
-| `/favorites`     | Displays favorite movies              |
-| `/movies`        | Alternative view of movies            |
-| `/popular`       | Popular movies (same as homepage)     |
-
----
-
-## 🎯 Features
-
-### 📽️ Movie Display (Home)
-- Fetches movies from TMDb API  
-- Displays movie cards with poster & title  
-- Pagination: 15 movies per page  
-- Client-side search by title
-
-### ⭐ Favorites
-- Add/remove movies from a persistent favorites list  
-- Global state managed via React Context
-
-### 🔍 Search
-- Filters current visible list of movies in real-time  
-- Lightweight, no additional API calls
-
-### 💅 Styling
-- Dark theme with yellow & blue accents  
-- Responsive grid layout  
-- Hover effects on buttons and cards
-
----
-
-Clone the repository:
-git clone https://github.com/n-kojevic/Cine-Time.git
-
-Install dependencies:
-npm install
-
-Run the app:
-npm start
-
-Open in browser:
-http://localhost:3000
-
-📬 Contact
-For questions or suggestions:
-📧 LinkedIn – Nikola Kojevic
+Comprehensive device testing:
+Expanding testing coverage across a wider range of devices and screen sizes to ensure consistent functionality and appearance.
